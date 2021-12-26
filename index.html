@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intuit Accounts - Sign Up</title>
+    <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
-    <header>
-      <div class="flexRow">
+    <header class="flexRow" >
+        <div id="signInContainer ">
         <div>Already have an Intuit account?</div>
         <a
           href="https://accounts.intuit.com/account-recovery.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Ftask%3DS"
@@ -16,21 +17,24 @@
         >
       </div>
       <div>
-        <button class="flexRow" class="blueButton">
+          <div>
+        <button class="flexRow blueButton" >
           <img
             src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxNiAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDBDMTAuNzk1NiAwIDEyLjg5MjkgMi4xODQxNyAxMi45OTYgNS4yNjE1NEwxMyA1LjVWN0gxNEMxNS4xMDQ2IDcgMTYgNy44OTU0MyAxNiA5VjE4QzE2IDE5LjEwNDYgMTUuMTA0NiAyMCAxNCAyMEgyQzAuODk1NDMgMjAgMCAxOS4xMDQ2IDAgMThWOUMwIDcuODk1NDMgMC44OTU0MyA3IDIgN0gzVjUuNUMzIDIuMjk3NjEgNS4xMzI3MiAwIDggMFpNMTQgOUgyVjE4SDE0VjlaTTggMTFDOS4xMDQ1NyAxMSAxMCAxMS44OTU0IDEwIDEzQzEwIDEzLjczOTggOS41OTgyOCAxNC4zODU4IDkuMDAxMDggMTQuNzMxOEw5IDE1LjJDOSAxNS42NDE4IDguNTUyMjggMTYgOCAxNkM3LjQ4NzE2IDE2IDcuMDY0NDkgMTUuNjkxMiA3LjAwNjczIDE1LjI5MzNMNyAxNS4yTDYuOTk5OTMgMTQuNzMyNEM2LjQwMjE3IDE0LjM4NjYgNiAxMy43NDAzIDYgMTNDNiAxMS44OTU0IDYuODk1NDMgMTEgOCAxMVpNOCAyQzYuMzMxNTMgMiA1LjA4ODI2IDMuMjc3NDEgNS4wMDQ1IDUuMjgyNDJMNSA1LjVWN0gxMVY1LjVDMTEgMy4zNzAyOCA5LjcyODA2IDIgOCAyWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="
             alt="candado"
           />> Sign In
         </button>
-      </div>
+    </div>
+</div>  
     </header>
-    <section id="logoSection">
+    <main class="flexColumn flexAlign">
+    <section id="logoSection" class="flexColumn flexAlign">
       <div>
         <a href="#">
           <img src="images/logo.png" alt="logo" />
         </a>
       </div>
-      <div class="flexRow">
+      <div class="flexRow flexAlign"  id="smallLogos">
         <a href="https://www.mint.com/"
           ><img
             class="logo"
@@ -38,7 +42,7 @@
             alt="logo" />
           <img
             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNyIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDM3IDE0Ij4KICAgIDxwYXRoIGZpbGw9IiM2QjZDNzIiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTE0LjMzMiA3LjkyN3Y1LjUzN0gxMy4wMlY4LjQ2NmMwLTEuODktLjYzNi0zLjE2NC0yLjMzNS0zLjE2NC0xLjg5IDAtMi41NjYgMS42NzktMi41NjYgMy4zNTh2NC44MDRINi44MDhWOC4xOTZjMC0xLjc1Ni0uNDI1LTIuODk0LTIuMTgxLTIuODk0LTEuMjU0IDAtMi42MjQgMS4xMi0yLjYyNCAzLjUzMXY0LjYzMUguNjlWNi40MjJjMC0uNDgzLS4wMi0xLjM3LS4wNzgtMS45ODhoMS4yNTVjLjAzOC40ODIuMDc3IDEuMTU3LjA3NyAxLjU0NGguMDM4Yy41MjEtMS4wNDMgMS42OC0xLjc3NiAyLjk3Mi0xLjc3Ni45ODQgMCAyLjE4LjM2NyAyLjc3OCAxLjkxLjYxNy0xLjIzNCAxLjcxNy0xLjkxIDMuMTY0LTEuOTEgMi4yOTcgMCAzLjQzNSAxLjQ4NiAzLjQzNSAzLjcyNXptMi44MzkgNS41MzdoMS4zMTJ2LTkuMDNIMTcuMTd2OS4wM3ptLjY1Ny0xMy40M2MtLjQ2NCAwLS45MjcuMzg3LS45MjcuOTI3cy40NjMuOTI1LjkyNy45MjVjLjQ2MyAwIC45MjUtLjM4NS45MjUtLjkyNWEuOTM4LjkzOCAwIDAgMC0uOTI1LS45Mjd6bTguMDQ0IDQuMTY4Yy0xLjI3NCAwLTIuNTg2LjczMy0zLjA4NyAxLjc3NmgtLjA0YzAtLjM4Ny0uMDM3LTEuMDYyLS4wNzctMS41NDRoLTEuMjUzYy4wNTguNjE4LjA3NyAxLjUwNS4wNzcgMS45ODh2Ny4wNDJoMS4zMTJ2LTQuNjNjMC0yLjQxMiAxLjM1LTMuNTMyIDIuNzQtMy41MzIgMS44OTEgMCAyLjQ1IDEuMjczIDIuNDUgMy4xNjR2NC45OThoMS4zMTNWNy45MjdjMC0yLjI0LTEuMTQtMy43MjUtMy40MzUtMy43MjV6bTEwLjgxNCAxLjMzMnYtMS4xSDM0LjE0VjEuODg2aC0xLjMxMnYyLjU0OGgtMS44N3YxLjFoMS44N3Y1LjYzNGMwIDEuOTg3IDEuMzUyIDIuNDEyIDIuMzE2IDIuNDEyLjU5OSAwIDEuMDgxLS4wOTYgMS41NDMtLjI3bC0uMDU2LTEuMTM5Yy0uMzUuMTc0LS43NzMuMjktMS4xNC4yOS0uNzkxIDAtMS4zNS0uMzA5LTEuMzUtMS42NlY1LjUzNGgyLjU0NnoiLz4KPC9zdmc+Cg=="
-            alt="logo"
+            alt=""
         /></a>
         <a href="https://quickbooks.intuit.com"
           ><img
@@ -60,9 +64,10 @@
         /></a>
       </div>
     </section>
-    <section id="FormContainer">
+  <div id="createContainer" class="flexColumn flexAlign">
+    <section class="flexColumn flexAlign" id="formContainer">
       <h1>Create an Intuit account</h1>
-      <h3>
+      <h3 class="gray">
         One account for everything Intuit, including Mint.
         <a
           href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account"
@@ -82,9 +87,9 @@
               >Phone <span class="gray">(recommended)</span></label
             >
             <input type="text" id="phone" name="user_phone" />
-            <span class="gray smallFont"
+            <div class="gray smallFont"
               >Standard call, message, or data rates may apply.
-            </span>
+            </div>
           </li>
 
           <li>
@@ -93,7 +98,7 @@
           </li>
         </ul>
 
-        <button class="flexRow" class="blueButton" type="submit">
+      <button class="flexRow blueButton" type="submit">
           <img
             src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxNiAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDBDMTAuNzk1NiAwIDEyLjg5MjkgMi4xODQxNyAxMi45OTYgNS4yNjE1NEwxMyA1LjVWN0gxNEMxNS4xMDQ2IDcgMTYgNy44OTU0MyAxNiA5VjE4QzE2IDE5LjEwNDYgMTUuMTA0NiAyMCAxNCAyMEgyQzAuODk1NDMgMjAgMCAxOS4xMDQ2IDAgMThWOUMwIDcuODk1NDMgMC44OTU0MyA3IDIgN0gzVjUuNUMzIDIuMjk3NjEgNS4xMzI3MiAwIDggMFpNMTQgOUgyVjE4SDE0VjlaTTggMTFDOS4xMDQ1NyAxMSAxMCAxMS44OTU0IDEwIDEzQzEwIDEzLjczOTggOS41OTgyOCAxNC4zODU4IDkuMDAxMDggMTQuNzMxOEw5IDE1LjJDOSAxNS42NDE4IDguNTUyMjggMTYgOCAxNkM3LjQ4NzE2IDE2IDcuMDY0NDkgMTUuNjkxMiA3LjAwNjczIDE1LjI5MzNMNyAxNS4yTDYuOTk5OTMgMTQuNzMyNEM2LjQwMjE3IDE0LjM4NjYgNiAxMy43NDAzIDYgMTNDNiAxMS44OTU0IDYuODk1NDMgMTEgOCAxMVpNOCAyQzYuMzMxNTMgMiA1LjA4ODI2IDMuMjc3NDEgNS4wMDQ1IDUuMjgyNDJMNSA1LjVWN0gxMVY1LjVDMTEgMy4zNzAyOCA5LjcyODA2IDIgOCAyWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="
             alt="candado"
@@ -102,19 +107,24 @@
         </button>
       </form>
     </section>
-    <section id="privacySection">
-      By selecting Create account, you agree to our <a href="">Terms </a> and
-      have read and acknowledge our <a href="">Global Privacy</a>
-      <a href="">Statement.</a>
+    <section id="privacySection" class="  gray">
+   <p>
+      By selecting Create account, you agree to our <a href="">Terms </a> and</p>
+      <p>
+      have read and acknowledge our <a href="">Global Privacy</a></p>
+<p>      <a href="">Statement.</a></p>
+<strong> Updates effective on January 10, 2022
+</strong>
+
     </section>
-    <section id="captchaSection">
+    <section id="captchaSection" class="flexColumn flexAlign">
       <span class="gray smallFont">
         Invisible reCAPTCHA by Google <a href=""> Privacy Policy </a>and
         <a href="">Terms of Use.</a>
       </span>
     </section>
-
-    <section id="copyrightSection">
+  </div>
+    <section id="copyrightSection" class="flexColumn flexAlign" >
       <div id="links">
         <ul class="flexRow">
           <li class="gray smallFont">Legal<a href=""></a></li>
@@ -134,7 +144,7 @@
         </p>
       </div>
     </section>
-
+</main>
     <footer class="flexRow">
 
         <a href="">Privacy Settings</a>

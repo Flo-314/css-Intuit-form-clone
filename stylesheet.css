@@ -1,0 +1,133 @@
+* {
+  font-family: AvenirNext, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.flexAlign {
+  align-items: center;
+  justify-content: center;
+}
+.gray {
+  color: #393a3d;
+}
+.smallFont{
+font-size: 0.6em;
+}
+a{
+  color: #0077C5;
+}
+.blueButton{
+  background-color: #167CCC;
+  width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0.5em 3em; 
+color: white;
+font-weight: 500;
+border: 1px solid #393a3d;
+border-radius: 0.3em;
+}
+.blueButton img{
+  margin-right: 0.65em;
+}
+
+
+body {
+  background-color: #eceef1;
+}
+
+header {
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0 0.8em 2em 0;
+}
+
+
+#logoSection {
+  margin-bottom: 1em;
+}
+#smallLogos img {
+  height: 1.3em;
+}
+#smallLogos a {
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+}
+.logo {
+  width: 1.45em;
+  height: 1.45em;
+}
+
+#createContainer {
+  border: 1px solid #c7c7c7;
+  background-color: white;
+padding-top: 2.5em;
+}
+#formContainer{
+  width: 100%;
+}
+
+#formContainer h1 {
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: 500;
+}
+#formContainer h3 {
+font-weight: 100;
+  font-size: 0.88em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 80%;
+  text-align: center;
+}
+#formContainer form{
+  padding: 0.5em 2em 0.5em 2em;
+  width: 100%;
+}
+#formContainer label{
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+#formContainer ul{
+    margin: 0px;
+    padding: 0px;
+}
+#formContainer li{
+    margin-bottom: 1em;
+    margin-top: 1em;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+#formContainer button{
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  padding: 1em;
+}
+
+
+#privacySection{
+  font-size: 0.75em;
+  text-align: center;
+  margin-bottom: 2.5em;
+  color: #757575;
+}
+#privacySection *{
+  margin: 0px;
+}
+#captchaSection{
+  width: 100%;
+  background-color:  #ECEEF1  ;
+  padding: 1em;
+  color: #8D9096;
+  font-weight: 500;
+}
